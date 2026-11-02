@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const features = [
   {
     icon: "🗺️",
@@ -39,7 +41,7 @@ export default function Home() {
             HANYU <b>LOOP</b>
           </span>
         </a>
-        <span className="badge">Sprint 0 · Bản xem trước</span>
+        <Link className="btn ghost small" href="/login">Đăng nhập</Link>
       </header>
 
       <main>
@@ -56,10 +58,9 @@ export default function Home() {
               nhiệm vụ và dùng tiếng Trung thật, thay vì chỉ làm bài tập.
             </p>
             <div className="actions">
-              <button className="btn primary" type="button" disabled>
+              <Link className="btn primary" href="/login">
                 Bắt đầu phiêu lưu
-                <small>Sắp ra mắt</small>
-              </button>
+              </Link>
               <a className="btn ghost" href="#features">
                 Xem tính năng
               </a>
